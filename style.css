@@ -462,16 +462,20 @@ textarea{
 	color: orangered;
 }
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
 	.pimg1, .pimg2, .pimg3, .pimg4{
-		background-attachment: fixed;
+		background-attachment: scroll;
+		width: auto;
+		max-width: 100%;
+		height: auto;
 	}
 
 	#boxes .container .box{
 	float: left;
 	text-align: center;
-	width: 45%;
+	width: 35%;
 	padding: 10px;
+	align-content: center;
 }
 
 	.linkimg{
@@ -486,7 +490,7 @@ textarea{
 		fixed = parallax
 		scroll= normal
 	*/	
-	background-attachment: fixed;
+	background-attachment: scroll;
 }
 	.aboutus{
 		text-align: center;
@@ -539,7 +543,7 @@ textarea{
 	width: 400px;
 	height: 100vh;
 	font-family: sans-serif;
-	padding: 100px 0px 0px 70px;
+	padding: 100px 0px 0px 40px;
 	overflow: hidden;
 }
 
